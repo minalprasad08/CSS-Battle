@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #333; 
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.outer-frame {
+    background-color: #222; 
+    border: 5px solid #8B0000; 
+    border-radius: 10px;
+    padding: 20px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.symbol-container {
+    width: 300px; 
+    height: 250px; 
+    background-color: #E0E0E0; 
+    border-radius: 8px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+}
+
+
+.wheelchair-person {
+    position: absolute;
+    top: 50px; 
+    left: 100px; 
+    transform-origin: bottom left;
+    transform: scale(0.8); 
+}
+
+.head {
+    width: 30px;
+    height: 30px;
+    background-color: #1E4F7C; 
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.body {
+    width: 25px;
+    height: 70px;
+    background-color: #1E4F7C; 
+    position: absolute;
+    top: 25px; 
+    left: 5px;
+    border-radius: 5px;
+    transform: skewY(-20deg); 
+}
+
+.wheelchair-frame {
+    position: absolute;
+    bottom: 50px; 
+    left: 90px; 
+    transform: scale(0.8); 
+}
+
+.wheel {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #1E4F7C; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.wheel-inner {
+    width: 50px;
+    height: 50px;
+    background-color: #6DA0CC; 
+    border-radius: 50%;
+}
+
+.armrest {
+    width: 70px;
+    height: 15px;
+    background-color: #1E4F7C; 
+    position: absolute;
+    top: -30px; 
+    left: 60px;
+    border-radius: 5px;
+    transform: rotate(15deg); 
+}
+
+.backrest {
+    width: 15px;
+    height: 70px;
+    background-color: #1E4F7C; 
+    position: absolute;
+    top: -60px; 
+    left: 130px;
+    border-radius: 5px;
+    transform: rotate(-10deg); 
+}
+
+.footrest {
+    width: 40px;
+    height: 10px;
+    background-color: #1E4F7C; 
+    position: absolute;
+    bottom: 5px; 
+    left: 100px;
+    border-radius: 3px;
+    transform: rotate(5deg); 
+}
+
+.body::after {
+    content: '';
+    width: 20px;
+    height: 40px;
+    background-color: #1E4F7C; 
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    border-radius: 5px;
+    transform: rotate(40deg);
+    transform-origin: top left;
+}
+
+.wheelchair-frame::before { 
+    content: '';
+    width: 10px;
+    height: 50px;
+    background-color: #1E4F7C;
+    position: absolute;
+    top: -15px;
+    left: 80px;
+    transform: rotate(-20deg);
+    transform-origin: bottom center;
+}
